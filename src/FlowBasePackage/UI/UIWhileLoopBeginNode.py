@@ -24,7 +24,7 @@ class UIWhileLoopBeginNode(UINodeBase, IConvexHullBackDrop):
     def eventDropOnCanvas(self):
         # TODO: try to simplify this with Canvas.spawnNode
         nodeTemplate = NodeBase.jsonTemplate()
-        nodeTemplate["package"] = "uflowBase"
+        nodeTemplate["package"] = "FlowBasePackage"
         nodeTemplate["lib"] = ""
         nodeTemplate["type"] = "loopEnd"
         nodeTemplate["name"] = self.canvasRef().graphManager.getUniqNodeName("loopEnd")

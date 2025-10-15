@@ -30,7 +30,7 @@ class PropertiesTool(DockTool):
         self.propertiesWidget.spawnDuplicate.connect(self.onTearOffCopy)
 
     def onTearOffCopy(self, *args, **kwargs):
-        instance = self.uflowInstance.invokeDockToolByName("uflowBase", self.name())
+        instance = self.uflowInstance.invokeDockToolByName("FlowBasePackage", self.name())
         if self.fillDelegate is not None:
             instance.assignPropertiesWidget(self.fillDelegate)
         instance.setFloating(True)

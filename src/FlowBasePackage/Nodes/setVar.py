@@ -125,7 +125,7 @@ class setVar(NodeBase):
 
     @staticmethod
     def category():
-        return "uflowBase"
+        return "FlowBasePackage"
 
     @staticmethod
     def keywords():
